@@ -1,0 +1,12 @@
+OOPS :
+
+It is about developing an application around its data, i.e. objects which provides 
+the access to their properties and the possible operations in their own way.
+
+Abstraction :
+
+One of the most fundamental concept of OOPs is Abstraction. Abstraction is a process 
+where you show only “relevant” data and “hide” unnecessary details of an object from
+the user. For example, when you login to your Amazon account online, you enter your 
+user_id and password and press login, what happens when you press login, how the input
+data sent to amazon server, how it gets verified is all abstracted away from the you.

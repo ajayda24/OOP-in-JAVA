@@ -1,0 +1,21 @@
+Encapsulation:
+
+Binding the data with the code that manipulates it.
+It keeps the data and the code safe from external interference
+Looking at the example of a power steering mechanism of a car. Power steering of a car is a complex system, which internally 
+have lots of components tightly coupled together, they work synchronously to turn the car in the desired direction. 
+It even controls the power delivered by the engine to the steering wheel. But to the external world there is only one interface
+is available and rest of the complexity is hidden. Moreover, the steering unit in itself is complete and independent. 
+It does not affect the functioning of any other mechanism.
+
+Similarly, same concept of encapsulation can be applied to code. Encapsulated code should have following characteristics:
+
+Everyone knows how to access it.
+Can be easily used regardless of implementation details.
+There shouldn’t any side effects of the code, to the rest of the application.
+The idea of encapsulation is to keep classes separated and prevent them from having tightly coupled with each other.
+
+A example of encapsulation is the class of java.util.Hashtable. User only knows that he can store data in the form of 
+key/value pair in a Hashtable and that he can retrieve that data in the various ways. But the actual implementation like, 
+how and where this data is actually stored, is hidden from the user. User can simply use Hashtable wherever he wants to 
+store Key/Value pairs without bothering about its implementation.

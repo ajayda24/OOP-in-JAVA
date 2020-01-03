@@ -1,0 +1,13 @@
+Inheritance :
+
+Inheritance is the mechanism by which an object acquires the some/all properties of another object.
+It supports the concept of hierarchical classification.
+For example: Car is a four wheeler vehicle so assume that we have a class FourWheeler and a sub class of it named Car. 
+Here Car acquires the properties of a class FourWheeler. Other classifications could be a jeep, tempo, van etc. 
+FourWheeler defines a class of vehicles that have four wheels, and specific range of engine power, load carrying 
+capacity etc. Car (termed as a sub-class) acquires these properties from FourWheeler, and has some specific properties, 
+which are different from other classifications of FourWheeler, such as luxury, comfort, shape, size, usage etc.
+
+A car can have further classification such as an open car, small car, big car etc, which will acquire the properties 
+from both Four Wheeler and Car, but will still have some specific properties. This way the level of hierarchy can 
+be extended to any level.

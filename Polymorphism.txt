@@ -1,0 +1,43 @@
+Polymorphism :
+
+Polymorphism is the concept where an object behaves differently in different situations. 
+There are two types of polymorphism – compile time polymorphism and runtime polymorphism.
+***********************************************************************************************
+Compile-time polymorphism is achieved by method overloading
+
+For example, we can have a class as below.
+
+public class Circle {
+
+	public void draw(){
+		System.out.println("Drwaing circle with default color Black and diameter 1 cm.");
+	}
+	
+	public void draw(int diameter){
+		System.out.println("Drwaing circle with default color Black and diameter"+diameter+" cm.");
+	}
+	
+	public void draw(int diameter, String color){
+		System.out.println("Drwaing circle with color"+color+" and diameter"+diameter+" cm.");
+	}
+}
+
+Here we have multiple draw methods but they have different behavior. This is a case of method overloading because 
+all the methods name is same and arguments are different. Here compiler will be able to identify the method to 
+invoke at compile-time, hence it’s called compile-time polymorphism.
+**********************************************************************************************
+Runtime polymorphism is implemented when we have “IS-A” relationship between objects. This is also called a 
+method overriding because subclass has to override the superclass method for runtime polymorphism.
+
+If we are working in terms of the superclass, the actual implementation class is decided at runtime. 
+The compiler is not able to decide which class method will be invoked. This decision is done at runtime, 
+hence the name as runtime polymorphism or dynamic method dispatch.
+
+Shape sh = new Circle();
+sh.draw();
+
+Shape sh1 = getShape(); //some third party logic to determine shape
+sh1.draw();
+
+**********************************************************************************************
+
